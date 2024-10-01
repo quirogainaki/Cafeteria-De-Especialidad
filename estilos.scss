@@ -49,15 +49,14 @@ nav{
             & li{
                 font-family: leonardo;
                 font-size: 30px;
-                color: rgb(0, 0, 0);
-                transition: o,3s;
+                transition: 0.7s;
             }
-            & li:hover{
-                color: $lettercolor !important;
-                transform: scale(1.2);
-                transition: 0.3s;
-                border: 2px solid rgb(233, 236, 233);
-                border-radius: $borderr;
+            & .nav-link:hover{
+            color: $lettercolor !important;
+            border: 2px solid rgb(233, 236, 233);
+            border-radius: $borderr;
+            transform: scale(1.2);
+            transition: 0.7s;
             }
         }
 
@@ -79,6 +78,8 @@ nav{
 }
 /*titulo*/
 /*titulocolumnas*/
+//intento de bucle (:
+
 .columna1{
     margin: 20px;
     padding: 20px;
@@ -129,6 +130,7 @@ button{
 /*nav*/
 nav{
     background-image: url(/img/coffee-5447420_1280.jpg);
+    background-size: contain;
     object-fit: $bgi;
     background-position: right;
 }
@@ -152,6 +154,7 @@ nav{
 }
 .cuadrado1{
     background-image: url(img/coffee-2560260_1280.jpg);
+    background-size: contain;
     object-fit: $bgi;
     background-position: center right;
     margin-top: 20px;
@@ -168,6 +171,7 @@ nav{
 }
 .cuadrado2{
     background-image: url(img/mint-1769560_1280.jpg);
+    background-size: contain;
     object-fit: $bgi;
     margin-top: 20px;
     transition: 1s;
@@ -184,6 +188,7 @@ nav{
 .cuadrado3{
     background-image: url(img/desk-3139127_640.jpg);
     object-fit: $bgi;
+    background-size: contain;
     background-position: center right;
     margin-top: 20px;
     transition: 1s;
@@ -218,6 +223,7 @@ nav{
 @media only screen and (max-width: 576px){
     .columnas1{
         background-image: url(img/coffee-2560260_1280.jpg) !important;
+        background-size: contain;
         object-fit: $bgi;
         background-position: center;
         text-shadow: $textshadow;
@@ -228,6 +234,7 @@ nav{
 @media only screen and (max-width: 576px){
     .columnas2{
         background-image: url(img/mint-1769560_1280.jpg) !important;
+        background-size: contain;
         object-fit: $bgi;
         background-position: center;
         text-shadow: $textshadow;
@@ -238,6 +245,7 @@ nav{
 @media only screen and (max-width: 576px){
     .columnas3{
         background-image: url(img/desk-3139127_640.jpg) !important;
+        background-size: contain;
         object-fit: $bgi;
         background-position: center;
         text-shadow: $textshadow;
@@ -285,11 +293,13 @@ footer{
 /*titulo productos complementarios*/
 /*catalogo productos complementarios*/
 /*solo falta elegir y ajustar imagenes*/
+
 .molinillo1{
     height: 400px;
     background-image: url(img/ashkan-forouzani-2AWQLHn7VLI-unsplash.jpg);
+    background-position:  bottom left;
     object-fit: $bgi;
-    background-position: left bottom;
+    
     margin: 20px;
     transition: 1s;
 }
@@ -299,6 +309,7 @@ footer{
 .molinillo2{
     height: 400px;
     background-image: url(img/ana-neves-2ZcPBHbChRk-unsplash.jpg);
+    background-size: cover;
     object-fit: $bgi;
     background-position: center;
     margin: 20px;
@@ -310,6 +321,7 @@ footer{
 .molinillo3{
     height: 400px;
     background-image: url(img/battlecreek-coffee-roasters-2eRXDiYOoMM-unsplash.jpg);
+    background-size: cover;
     object-fit: $bgi;
     background-position: center;
     margin: 20px;
@@ -321,6 +333,7 @@ footer{
 .cafetera1{
     height: 500px;
     background-image: url(img/najib-kalil-gHQxwXFj15o-unsplash\ \(1\).jpg);
+    background-size: cover;
     object-fit: $bgi;
     background-position: center;
     margin: 20px;
@@ -332,6 +345,7 @@ footer{
 .cafetera2{
     height: 500px;
     background-image: url(img/ronan-furuta-AjcABUQ7WuA-unsplash.jpg);
+    background-size: cover;
     object-fit: $bgi;
     background-position: bottom;
     margin: 20px;
@@ -343,6 +357,7 @@ footer{
 .cafetera3{
     height: 500px;
     background-image: url(img/milada-vigerova-x7mqPOxuJNw-unsplash.jpg);
+    
     object-fit: $bgi;
     background-position:center;
     margin: 20px;
@@ -354,6 +369,7 @@ footer{
 .espumador1{
     height: 500px;
     background-image: url(img/priscilla-du-preez-3MrkGyBoRc0-unsplash.jpg);
+    background-size: contain;
     object-fit: $bgi;
     background-position: center;
     margin: 20px;

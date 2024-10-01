@@ -1,0 +1,2 @@
+aplicamos sass, con uso de variables y nexting en nuestro codigo.
+se agrego la propiedad: background-size en las imagenes, se me salio de la cabeza esa propiedad :/.
