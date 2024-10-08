@@ -18,7 +18,8 @@ background-position: right;
 }*/
 nav {
   background-image: url(/img/coffee-5447420_1280.jpg);
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-position: right;
 }
 nav .navbar {
@@ -56,7 +57,7 @@ nav .navbar ul .nav-link:hover {
 /*finalizamos con estilos header de index html*/
 /*comenzamos con 1era seccion*/
 /*titulo*/
-.titulo {
+.titulo1 {
   margin: 20px;
   text-shadow: 3px 3px black;
   font-family: leonardo;
@@ -67,8 +68,29 @@ nav .navbar ul .nav-link:hover {
   color: rgb(233, 236, 233) !important;
 }
 
-/*titulo*/
-/*titulocolumnas*/
+.titulo2 {
+  margin: 20px;
+  text-shadow: 3px 3px 3px black;
+  font-size: 40px;
+  color: rgb(233, 236, 233) !important;
+}
+
+.titulo3 {
+  margin: 20px;
+  text-shadow: 3px 3px 3px black;
+  font-size: 40px;
+  color: rgb(223, 112, 21) !important;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.705);
+}
+
+.titulo4 {
+  margin: 20px;
+  text-shadow: 3px 3px 3px black;
+  font-family: leonardo;
+  font-size: 40px;
+  color: rgb(233, 236, 233) !important;
+}
+
 .columna1 {
   margin: 20px;
   padding: 20px;
@@ -119,18 +141,10 @@ nav .navbar ul .nav-link:hover {
 /*boton*/
 button {
   background-color: peru !important;
+  /*box-shadow: 7px 7px 7px rgb(255, 128, 0);*/
 }
 
 /*boton*/
-/*nav*/
-nav {
-  background-image: url(/img/coffee-5447420_1280.jpg);
-  background-size: contain;
-  object-fit: contain;
-  background-position: right;
-}
-
-/*nav*/
 /*finalizamos con 1era seccion*/
 /*comenzamos con 2da seccion*/
 .titulosec {
@@ -144,22 +158,14 @@ nav {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(233, 236, 233);
-  border-image: initial;
+  -o-border-image: initial;
+     border-image: initial;
   padding: 20px;
 }
 
-.cuadrado1 {
-  background-image: url(img/coffee-2560260_1280.jpg);
-  background-size: contain;
-  object-fit: contain;
-  background-position: center right;
-  margin-top: 20px;
-  transition: 1s;
-}
-
 .columnas1 {
+  background-color: #b05911;
   margin-top: 20px;
-  background-color: rgb(223, 112, 21);
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
@@ -167,36 +173,19 @@ nav {
   color: rgb(233, 236, 233);
 }
 
-.cuadrado2 {
-  background-image: url(img/mint-1769560_1280.jpg);
-  background-size: contain;
-  object-fit: contain;
-  margin-top: 20px;
-  transition: 1s;
-}
-
 .columnas2 {
+  border-top-right-radius: 30px !important;
+  background-color: #82410c;
   margin-top: 20px;
-  background-color: rgb(223, 112, 21);
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
-  border-top-right-radius: 30px !important;
   color: rgb(233, 236, 233);
 }
 
-.cuadrado3 {
-  background-image: url(img/desk-3139127_640.jpg);
-  object-fit: contain;
-  background-size: contain;
-  background-position: center right;
-  margin-top: 20px;
-  transition: 1s;
-}
-
 .columnas3 {
+  background-color: #532a08;
   margin-top: 20px;
-  background-color: rgb(223, 112, 21);
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
@@ -208,31 +197,62 @@ nav {
   scale: 1.2;
 }
 
-.cuadrado1:hover {
-  scale: 0.9;
-}
-
 .columnas2:hover {
   scale: 1.2;
-}
-
-.cuadrado2:hover {
-  scale: 0.9;
 }
 
 .columnas3:hover {
   scale: 1.2;
 }
 
+.cuadrado1:hover {
+  scale: 0.9;
+}
+
+.cuadrado2:hover {
+  scale: 0.9;
+}
+
 .cuadrado3:hover {
   scale: 0.9;
+}
+
+.cuadrado1 {
+  background-image: url(img/index1.jpg);
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center right;
+  margin-top: 20px;
+  transition: 1s;
+}
+
+.cuadrado2 {
+  background-image: url(img/index2.jpg);
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center right;
+  margin-top: 20px;
+  transition: 1s;
+}
+
+.cuadrado3 {
+  background-image: url(img/index3.jpg);
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center right;
+  margin-top: 20px;
+  transition: 1s;
 }
 
 @media only screen and (max-width: 576px) {
   .columnas1 {
     background-image: url(img/coffee-2560260_1280.jpg) !important;
     background-size: contain;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     background-position: center;
     text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
     color: rgb(233, 236, 233);
@@ -243,7 +263,8 @@ nav {
   .columnas2 {
     background-image: url(img/mint-1769560_1280.jpg) !important;
     background-size: contain;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     background-position: center;
     text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
     color: rgb(233, 236, 233);
@@ -254,7 +275,8 @@ nav {
   .columnas3 {
     background-image: url(img/desk-3139127_640.jpg) !important;
     background-size: contain;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     background-position: center;
     text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
     color: rgb(233, 236, 233);
@@ -276,7 +298,6 @@ footer {
 /*catalogo*/
 .catalogo {
   margin: 20px;
-  /*padding: 20px;*/
   text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
   background-color: rgb(223, 112, 21);
   border-bottom-left-radius: 40px;
@@ -292,155 +313,144 @@ footer {
 }
 
 /*catalogo*/
-/*titulo productos complementarios*/
-.titulo2 {
-  margin: 20px;
-  text-shadow: 3px 3px 3px black;
-  font-size: 40px;
-  color: rgb(233, 236, 233) !important;
-}
-
-/*titulo productos complementarios*/
 /*catalogo productos complementarios*/
-/*solo falta elegir y ajustar imagenes*/
-.molinillo1 {
-  height: 400px;
-  background-image: url(img/ashkan-forouzani-2AWQLHn7VLI-unsplash.jpg);
-  background-position: bottom left;
-  object-fit: contain;
-  margin: 20px;
-  transition: 1s;
-}
-
-.molinillo1:hover {
-  scale: 0.9;
-}
-
-.molinillo2 {
-  height: 400px;
-  background-image: url(img/ana-neves-2ZcPBHbChRk-unsplash.jpg);
-  background-size: cover;
-  object-fit: contain;
+.producto-1 {
   background-position: center;
-  margin: 20px;
-  transition: 1s;
-}
-
-.molinillo2:hover {
-  scale: 0.9;
-}
-
-.molinillo3 {
+  background-image: url(img/-1.jpg);
+  background-size: cover;
   height: 400px;
-  background-image: url(img/battlecreek-coffee-roasters-2eRXDiYOoMM-unsplash.jpg);
-  background-size: cover;
-  object-fit: contain;
-  background-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.molinillo3:hover {
-  scale: 0.9;
-}
-
-.cafetera1 {
-  height: 500px;
-  background-image: url(img/najib-kalil-gHQxwXFj15o-unsplash\ \(1\).jpg);
-  background-size: cover;
-  object-fit: contain;
-  background-position: center;
-  margin: 20px;
-  transition: 1s;
-}
-
-.cafetera1:hover {
-  scale: 0.9;
-}
-
-.cafetera2 {
-  height: 500px;
-  background-image: url(img/ronan-furuta-AjcABUQ7WuA-unsplash.jpg);
-  background-size: cover;
-  object-fit: contain;
+.producto-2 {
   background-position: bottom;
+  background-image: url(img/-2.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.cafetera2:hover {
-  scale: 0.9;
+.producto-3 {
+  background-image: url(img/-3.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px;
+  transition: 1s;
 }
 
-.cafetera3 {
-  height: 500px;
-  background-image: url(img/milada-vigerova-x7mqPOxuJNw-unsplash.jpg);
-  object-fit: contain;
+.producto-4 {
   background-position: center;
+  background-image: url(img/-4.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.cafetera3:hover {
-  scale: 0.9;
+.producto-5 {
+  background-position: bottom;
+  background-image: url(img/-5.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px;
+  transition: 1s;
 }
 
-.espumador1 {
-  height: 500px;
-  background-image: url(img/priscilla-du-preez-3MrkGyBoRc0-unsplash.jpg);
-  background-size: contain;
-  object-fit: contain;
+.producto-6 {
   background-position: center;
+  background-image: url(img/-6.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.espumador1:hover {
-  scale: 0.9;
+.producto-7 {
+  background-image: url(img/-7.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px;
+  transition: 1s;
 }
 
-.espumador2 {
-  height: 500px;
-  background-image: url(img/debby-hudson-gJylsVMSf-k-unsplash.jpg);
-  object-fit: contain;
+.producto-8 {
   background-position: right;
+  background-image: url(img/-8.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.espumador2:hover {
-  scale: 0.9;
-}
-
-.espumador3 {
-  height: 500px;
-  background-image: url(img/john-forson-cmQ13SkCZmc-unsplash.jpg);
-  object-fit: contain;
-  background-position: bottom;
+.producto-9 {
+  background-image: url(img/-9.jpg);
+  background-size: cover;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 20px;
   transition: 1s;
 }
 
-.espumador3:hover {
+.producto-1:hover {
   scale: 0.9;
 }
 
-/*solo falta elegir y ajustar imagenes*/
+.producto-2:hover {
+  scale: 0.9;
+}
+
+.producto-3:hover {
+  scale: 0.9;
+}
+
+.producto-4:hover {
+  scale: 0.9;
+}
+
+.producto-5:hover {
+  scale: 0.9;
+}
+
+.producto-6:hover {
+  scale: 0.9;
+}
+
+.producto-7:hover {
+  scale: 0.9;
+}
+
+.producto-8:hover {
+  scale: 0.9;
+}
+
+.producto-9:hover {
+  scale: 0.9;
+}
+
 /*catalogo productos complementarios*/
 /*agregar media queries si es necesario*/
 /*finalizamos con productos html*/
 /*sobre nosotros.html*/
-/*titulo*/
-.titulo3 {
-  margin: 20px;
-  text-shadow: 3px 3px 3px black;
-  font-size: 40px;
-  color: rgb(223, 112, 21) !important;
-  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.705);
-}
-
-/*titulo*/
-.parrafo {
+.parrafo1 {
   padding: 10px;
   margin-top: 20px;
   background-color: rgb(223, 112, 21);
@@ -449,6 +459,14 @@ footer {
   border-top-right-radius: 30px !important;
   border-top-left-radius: 30px !important;
   color: rgb(233, 236, 233);
+}
+
+.parrafo2 {
+  font-size: 19px;
+  text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
+  background-color: rgba(73, 50, 0, 0.4117647059);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .mision {
@@ -462,30 +480,20 @@ footer {
   border: 2px solid rgb(223, 112, 21);
 }
 
-.fotoequipo1 {
+.foto1 {
   margin-top: 90px;
 }
 
-.fotocertificacionecologica {
+.foto2 {
   margin-top: 110px;
 }
 
-.fotocompetencia {
+.foto3 {
   margin-top: 70px;
 }
 
 /*sobre nosotros.html*/
 /*que es html*/
-/*.parrafoqes{
-    padding: 10px;
-    margin-top: 20px;
-    background-color: rgb(189, 96, 19);
-    transition: 1s;
-    border: 4px solid rgb(233, 236, 233);
-    border-top-right-radius: 30px !important;
-    border-top-left-radius: 30px !important;
-    color: beige;
-}*/
 .seccion1 {
   background-color: rgb(223, 112, 21);
   margin: 20px;
@@ -494,21 +502,4 @@ footer {
   padding: 10px;
 }
 
-.titulo4 {
-  margin: 20px;
-  text-shadow: 3px 3px 3px black;
-  font-family: leonardo;
-  font-size: 40px;
-  color: rgb(233, 236, 233) !important;
-}
-
-/*que es html*/
-.parrafo2 {
-  font-size: 19px;
-  text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
-  background: rgba(73, 50, 0, 0.4117647059);
-  padding: 20px;
-  border-radius: 20px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+/*que es html*//*# sourceMappingURL=estilos.css.map */

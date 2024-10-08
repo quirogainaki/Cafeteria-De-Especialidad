@@ -22,7 +22,7 @@ $textshadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
 $bgi: contain;
 
 nav{
-    background-image: url(/img/coffee-5447420_1280.jpg);
+    background-image:url(/img/coffee-5447420_1280.jpg);
     object-fit: $bgi;
     background-position: right;
 
@@ -66,57 +66,57 @@ nav{
 /*finalizamos con estilos header de index html*/
 /*comenzamos con 1era seccion*/
 /*titulo*/
-.titulo{
-    margin: 20px;
-    text-shadow: 3px 3px black;
-    font-family: leonardo;
-    font-size: 40px;
-    background-color: $bgcolor;
-    border-radius: $borderr;
-    border: 2px solid rgb(233, 236, 233);
-    color: $lettercolor !important;
+@each $title in 1,2,3,4{
+    .titulo#{$title}{
+        @if $title==1{
+            margin: 20px;
+            text-shadow: 3px 3px black;
+            font-family: leonardo;
+            font-size: 40px;
+            background-color: $bgcolor;
+            border-radius: $borderr;
+            border: 2px solid rgb(233, 236, 233);
+            color: $lettercolor !important;
+        }
+        @else if $title==2{
+            margin: 20px;
+            text-shadow: 3px 3px 3px black;
+            font-size: 40px;
+            color: $lettercolor !important;
+        }
+        @else if $title==3{
+            margin: 20px;
+            text-shadow: 3px 3px 3px black;
+            font-size: 40px;
+            color: rgb(223, 112, 21) !important;
+            text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.705);
+        }
+        @else if $title==4{
+            margin: 20px;
+            text-shadow: 3px 3px 3px black;
+            font-family: leonardo;
+            font-size: 40px;
+            color: $lettercolor !important;
+        }
+    }
 }
-/*titulo*/
-/*titulocolumnas*/
-//intento de bucle (:
-
-.columna1{
-    margin: 20px;
-    padding: 20px;
-    text-shadow: $textshadow;
-    background-color: $bgcolor;
-    border-radius: $borderr;
-    transition: 1s;
-    border: 2px solid rgb(233, 236, 233);
-    color: $lettercolor;
+@each $columna in 1,2,3{
+    .columna#{$columna}{
+        margin: 20px;
+        padding: 20px;
+        text-shadow: $textshadow;
+        background-color: $bgcolor;
+        //background-image: linear-gradient(#1E0508, #884528, #3E1E0F );
+        border-radius: $borderr;
+        transition: 1s;
+        border: 2px solid rgb(233, 236, 233);
+        color: $lettercolor;
+    }
 }
-.columna2{
-    margin: 20px;
-    padding: 20px;
-    text-shadow: $textshadow;
-    background-color: $bgcolor;
-    border-radius: $borderr;
-    transition: 1s;
-    border: 2px solid rgb(233, 236, 233);
-    color: $lettercolor;
-}
-.columna3{
-    margin: 20px;
-    padding: 20px;
-    text-shadow: $textshadow;
-    background-color: $bgcolor;
-    border-radius: $borderr;
-    transition: 1s;
-    border: 2px solid rgb(233, 236, 233);
-    color: $lettercolor;
-}
-.columna1:hover{
-    scale: 1.2;
-}
-.columna2:hover{
-    scale: 1.2;
-}.columna3:hover{
-    scale: 1.2;
+@each $columna in 1,2,3{
+    .columna#{$columna}:hover{
+        scale: 1.2;
+    }
 }
 /*titulocolumnas*/
 
@@ -124,18 +124,9 @@ nav{
 /*boton*/
 button{
     background-color: peru !important;
+    /*box-shadow: 7px 7px 7px rgb(255, 128, 0);*/
 }
 /*boton*/
-
-/*nav*/
-nav{
-    background-image: url(/img/coffee-5447420_1280.jpg);
-    background-size: contain;
-    object-fit: $bgi;
-    background-position: right;
-}
-
-/*nav*/
 /*finalizamos con 1era seccion*/
 /*comenzamos con 2da seccion*/
 .titulosec{
@@ -152,73 +143,49 @@ nav{
     border-image: initial;
     padding: 20px;
 }
-.cuadrado1{
-    background-image: url(img/coffee-2560260_1280.jpg);
-    background-size: contain;
-    object-fit: $bgi;
-    background-position: center right;
-    margin-top: 20px;
-    transition: 1s;
+
+@for $i from 1 through 3 {
+    .columnas#{$i}{
+        @if $i==2{
+            border-top-right-radius: 30px !important;
+            background-color: darken($bgcolor, calc($i*10%));
+            margin-top: 20px;
+            transition: 1s;
+            border: 7px double rgb(233, 236, 233);
+            border-style: double;
+            color: $lettercolor;
+        }
+        @else {
+            background-color: darken($bgcolor, calc($i*10%));
+            margin-top: 20px;
+            transition: 1s;
+            border: 7px double rgb(233, 236, 233);
+            border-style: double;
+            border-top-left-radius: 30px !important;
+            color: $lettercolor;
+        }
+        
+    }
 }
-.columnas1{
-    margin-top: 20px;
-    background-color: $bgcolor;
-    transition: 1s;
-    border: 7px double rgb(233, 236, 233);
-    border-style: double;
-    border-top-left-radius: 30px !important;
-    color: $lettercolor;
+@for $i from 1 through 3 {
+    .columnas#{$i}:hover{
+        scale: 1.2;
+    }
 }
-.cuadrado2{
-    background-image: url(img/mint-1769560_1280.jpg);
-    background-size: contain;
-    object-fit: $bgi;
-    margin-top: 20px;
-    transition: 1s;
+@for $i from 1 through 3{
+    .cuadrado#{$i}:hover{
+        scale: 0.9;
+    }
 }
-.columnas2{
-    margin-top: 20px;
-    background-color: $bgcolor;
-    transition: 1s;
-    border: 7px double rgb(233, 236, 233);
-    border-style: double;
-    border-top-right-radius: 30px !important;
-    color: $lettercolor;
-}
-.cuadrado3{
-    background-image: url(img/desk-3139127_640.jpg);
-    object-fit: $bgi;
-    background-size: contain;
-    background-position: center right;
-    margin-top: 20px;
-    transition: 1s;
-}
-.columnas3{
-    margin-top: 20px;
-    background-color:$bgcolor;
-    transition: 1s;
-    border: 7px double rgb(233, 236, 233);
-    border-style: double;
-    border-top-left-radius: 30px !important;
-    color: $lettercolor;
-}
-.columnas1:hover{
-    scale: 1.2;
-}
-.cuadrado1:hover{
-    scale: 0.9;
-}
-.columnas2:hover{
-    scale: 1.2;
-}
-.cuadrado2:hover{
-    scale: 0.9;
-}
-.columnas3:hover{
-    scale: 1.2;
-}
-.cuadrado3:hover{
-    scale: 0.9;
+@for $i from 1 through 3{
+    .cuadrado#{$i}{
+        background-image: url(img/index#{$i}.jpg);
+        background-size: contain;
+        object-fit: $bgi;
+        background-position: center right;
+        margin-top: 20px;
+        transition: 1s;
+    }
 }
 @media only screen and (max-width: 576px){
     .columnas1{
@@ -269,7 +236,6 @@ footer{
 /*catalogo*/
 .catalogo{
     margin: 20px;
-    /*padding: 20px;*/
     text-shadow: $textshadow;
     background-color: $bgcolor;
     border-bottom-left-radius: 40px;
@@ -283,146 +249,64 @@ footer{
     scale: 0.8;
 }
 /*catalogo*/
-/*titulo productos complementarios*/
-.titulo2{
-    margin: 20px;
-    text-shadow: 3px 3px 3px black;
-    font-size: 40px;
-    color: $lettercolor !important;
-}
-/*titulo productos complementarios*/
 /*catalogo productos complementarios*/
-/*solo falta elegir y ajustar imagenes*/
-
-.molinillo1{
-    height: 400px;
-    background-image: url(img/ashkan-forouzani-2AWQLHn7VLI-unsplash.jpg);
-    background-position:  bottom left;
-    object-fit: $bgi;
-    
-    margin: 20px;
-    transition: 1s;
+@each $producto in -1,-2,-3,-4,-5,-6,-7,-8,-9{
+    .producto#{$producto}{
+        @if $producto==-1{
+            background-position: center;
+        }
+        @else if $producto==-2{
+            background-position: bottom;
+        }
+        @else if $producto==-4{
+            background-position: center;
+        }
+        @else if $producto==-5{
+            background-position: bottom;
+        }
+        @else if $producto==-6{
+            background-position: center;
+        }
+        @else if $producto==-8{
+            background-position: right;
+        }
+        background-image: url(img/#{$producto}.jpg);
+        background-size: cover;
+        height: 400px;
+        object-fit: $bgi;
+        margin: 20px;
+        transition: 1s;
+    }
 }
-.molinillo1:hover{
-    scale: 0.9;
+@each $producto in -1,-2,-3,-4,-5,-6,-7,-8,-9{
+    .producto#{$producto}:hover{
+        scale: 0.9;
+    }
 }
-.molinillo2{
-    height: 400px;
-    background-image: url(img/ana-neves-2ZcPBHbChRk-unsplash.jpg);
-    background-size: cover;
-    object-fit: $bgi;
-    background-position: center;
-    margin: 20px;
-    transition: 1s;
-}
-.molinillo2:hover{
-    scale: 0.9;
-}
-.molinillo3{
-    height: 400px;
-    background-image: url(img/battlecreek-coffee-roasters-2eRXDiYOoMM-unsplash.jpg);
-    background-size: cover;
-    object-fit: $bgi;
-    background-position: center;
-    margin: 20px;
-    transition: 1s;
-}
-.molinillo3:hover{
-    scale: 0.9;
-}
-.cafetera1{
-    height: 500px;
-    background-image: url(img/najib-kalil-gHQxwXFj15o-unsplash\ \(1\).jpg);
-    background-size: cover;
-    object-fit: $bgi;
-    background-position: center;
-    margin: 20px;
-    transition: 1s;
-}
-.cafetera1:hover{
-    scale: 0.9;
-}
-.cafetera2{
-    height: 500px;
-    background-image: url(img/ronan-furuta-AjcABUQ7WuA-unsplash.jpg);
-    background-size: cover;
-    object-fit: $bgi;
-    background-position: bottom;
-    margin: 20px;
-    transition: 1s;
-}
-.cafetera2:hover{
-    scale: 0.9;
-}
-.cafetera3{
-    height: 500px;
-    background-image: url(img/milada-vigerova-x7mqPOxuJNw-unsplash.jpg);
-    
-    object-fit: $bgi;
-    background-position:center;
-    margin: 20px;
-    transition: 1s;
-}
-.cafetera3:hover{
-    scale: 0.9;
-}
-.espumador1{
-    height: 500px;
-    background-image: url(img/priscilla-du-preez-3MrkGyBoRc0-unsplash.jpg);
-    background-size: contain;
-    object-fit: $bgi;
-    background-position: center;
-    margin: 20px;
-    transition: 1s;
-}
-.espumador1:hover{
-    scale: 0.9;
-}
-.espumador2{
-    height: 500px;
-    background-image: url(img/debby-hudson-gJylsVMSf-k-unsplash.jpg);
-    object-fit: $bgi;
-    background-position: right;
-    margin: 20px;
-    transition: 1s;
-}
-.espumador2:hover{
-    scale: 0.9;
-}
-.espumador3{
-    height: 500px;
-    background-image: url(img/john-forson-cmQ13SkCZmc-unsplash.jpg);
-    object-fit: $bgi;
-    background-position: bottom;
-    margin: 20px;
-    transition: 1s;
-}
-.espumador3:hover{
-    scale: 0.9;
-}
-/*solo falta elegir y ajustar imagenes*/
 /*catalogo productos complementarios*/
 /*agregar media queries si es necesario*/
 /*finalizamos con productos html*/
 /*sobre nosotros.html*/
-/*titulo*/
-.titulo3{
-    margin: 20px;
-    text-shadow: 3px 3px 3px black;
-    font-size: 40px;
-    color: rgb(223, 112, 21) !important;
-    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.705);
-}
-/*titulo*/
-.parrafo{
-    padding: 10px;
-    margin-top: 20px;
-    background-color: $bgcolor;
-    transition: 1s;
-    border: 4px solid rgb(233, 236, 233);
-    border-top-right-radius: 30px !important;
-    border-top-left-radius: 30px !important;
-    color: $lettercolor;
+@for $i from 1 through 2{
+    .parrafo#{$i}{
+        @if $i==1{
+            padding: 10px;
+            margin-top: 20px;
+            background-color: $bgcolor;
+            transition: 1s;
+            border: 4px solid rgb(233, 236, 233);
+            border-top-right-radius: 30px !important;
+            border-top-left-radius: 30px !important;
+            color: $lettercolor;
+        }
+        @else if $i==2{
+            font-size: 19px;
+            text-shadow: $textshadow;
+            background-color: #49320069;
+            padding: 20px;
+            border-radius: $borderr;
+        }
+    }
 }
 .mision{
     padding: 20px;
@@ -433,27 +317,21 @@ footer{
     border-radius: $borderr;
     border: 2px solid $bgcolor;
 }
-.fotoequipo1{
-    margin-top: 90px;
-}
-.fotocertificacionecologica{
-    margin-top: 110px;
-}
-.fotocompetencia{
-    margin-top: 70px;
+@each $certificaciones in 1,2,3{
+    .foto#{$certificaciones}{
+        @if $certificaciones==1{
+            margin-top: 90px;
+        }
+        @else if $certificaciones==2{
+            margin-top: 110px;
+        }
+        @else if $certificaciones==3{
+            margin-top: 70px;
+        }
+    }
 }
 /*sobre nosotros.html*/   
 /*que es html*/
- /*.parrafoqes{
-    padding: 10px;
-    margin-top: 20px;
-    background-color: rgb(189, 96, 19);
-    transition: 1s;
-    border: 4px solid rgb(233, 236, 233);
-    border-top-right-radius: 30px !important;
-    border-top-left-radius: 30px !important;
-    color: beige;
-}*/
 .seccion1{
     background-color:  $bgcolor;
     margin: 20px;
@@ -461,18 +339,4 @@ footer{
     margin-left: 30px;
     padding: 10px;
 }
-.titulo4{
-    margin: 20px;
-    text-shadow: 3px 3px 3px black;
-    font-family: leonardo;
-    font-size: 40px;
-    color: $lettercolor !important;
-}
 /*que es html*/
-.parrafo2{
-    font-size: 19px;
-    text-shadow: $textshadow;
-    background: #49320069;
-    padding: 20px;
-    border-radius: $borderr;
-}
