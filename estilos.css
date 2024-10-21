@@ -17,10 +17,11 @@ object-fit: contain;
 background-position: right;
 }*/
 nav {
-  background-image: url(/img/coffee-5447420_1280.jpg);
+  background-image: linear-gradient(to top left, rgba(50, 50, 50, 0.7), rgba(101, 67, 33, 0.7), rgba(101, 67, 33, 0), rgba(211, 211, 211, 0)), url(/img/coffee-5447420_1280.jpg);
   -o-object-fit: contain;
      object-fit: contain;
   background-position: right;
+  background-size: contain;
 }
 nav .navbar {
   background-color: rgb(223, 112, 21) !important;
@@ -66,6 +67,7 @@ nav .navbar ul .nav-link:hover {
   border-radius: 20px;
   border: 2px solid rgb(233, 236, 233);
   color: rgb(233, 236, 233) !important;
+  background-image: radial-gradient(peru, rgb(223, 112, 21), rgb(228, 110, 0));
 }
 
 .titulo2 {
@@ -91,11 +93,24 @@ nav .navbar ul .nav-link:hover {
   color: rgb(233, 236, 233) !important;
 }
 
+.titulo5 {
+  margin: 20px;
+  padding: 15px;
+  text-shadow: 3px 3px 3px black;
+  font-size: 40px;
+  color: rgb(233, 236, 233) !important;
+  background-color: rgb(223, 112, 21);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: solid 3px rgb(233, 236, 233);
+}
+
 .columna1 {
   margin: 20px;
   padding: 20px;
   text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
   background-color: rgb(223, 112, 21);
+  background-image: radial-gradient(peru, rgb(223, 112, 21), rgb(172, 84, 2));
   border-radius: 20px;
   transition: 1s;
   border: 2px solid rgb(233, 236, 233);
@@ -107,6 +122,7 @@ nav .navbar ul .nav-link:hover {
   padding: 20px;
   text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
   background-color: rgb(223, 112, 21);
+  background-image: radial-gradient(peru, rgb(223, 112, 21), rgb(172, 84, 2));
   border-radius: 20px;
   transition: 1s;
   border: 2px solid rgb(233, 236, 233);
@@ -118,6 +134,7 @@ nav .navbar ul .nav-link:hover {
   padding: 20px;
   text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
   background-color: rgb(223, 112, 21);
+  background-image: radial-gradient(peru, rgb(223, 112, 21), rgb(172, 84, 2));
   border-radius: 20px;
   transition: 1s;
   border: 2px solid rgb(233, 236, 233);
@@ -150,7 +167,7 @@ button {
 .titulosec {
   margin-top: 60px;
   margin-bottom: 60px;
-  background-color: rgb(223, 112, 21);
+  background-image: repeating-linear-gradient(90deg, rgba(163, 92, 0, 0.904) 20px, rgba(41, 23, 0, 0.904) 20px, rgba(210, 105, 30, 0.932) 30px);
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -161,10 +178,11 @@ button {
   -o-border-image: initial;
      border-image: initial;
   padding: 20px;
+  color: antiquewhite;
 }
 
 .columnas1 {
-  background-color: #b05911;
+  background-image: repeating-linear-gradient(145deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
   margin-top: 20px;
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
@@ -175,7 +193,7 @@ button {
 
 .columnas2 {
   border-top-right-radius: 30px !important;
-  background-color: #82410c;
+  background-image: repeating-linear-gradient(45deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
   margin-top: 20px;
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
@@ -184,7 +202,7 @@ button {
 }
 
 .columnas3 {
-  background-color: #532a08;
+  background-image: repeating-linear-gradient(145deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
   margin-top: 20px;
   transition: 1s;
   border: 7px double rgb(233, 236, 233);
@@ -450,10 +468,15 @@ footer {
 /*agregar media queries si es necesario*/
 /*finalizamos con productos html*/
 /*sobre nosotros.html*/
+.sobrenosotros {
+  background-image: linear-gradient(to bottom, #8b4513 20px, #d2691e 50px, #8b5a2b 80px, rgb(223, 112, 21) 100px);
+  border-radius: 60px;
+}
+
 .parrafo1 {
   padding: 10px;
   margin-top: 20px;
-  background-color: rgb(223, 112, 21);
+  background-image: repeating-linear-gradient(30deg, #8b4513 20px, #d2691e 50px, rgb(223, 112, 21) 100px);
   transition: 1s;
   border: 4px solid rgb(233, 236, 233);
   border-top-right-radius: 30px !important;
@@ -464,9 +487,10 @@ footer {
 .parrafo2 {
   font-size: 19px;
   text-shadow: 3px 3px 3px rgba(170, 152, 152, 0.514);
-  background-color: rgba(73, 50, 0, 0.4117647059);
+  background-image: repeating-linear-gradient(30deg, #8b4513 20px, #d2691e 50px, rgb(223, 112, 21) 100px);
   padding: 20px;
   border-radius: 20px;
+  border: 4px solid rgb(233, 236, 233);
 }
 
 .mision {
@@ -495,11 +519,33 @@ footer {
 /*sobre nosotros.html*/
 /*que es html*/
 .seccion1 {
-  background-color: rgb(223, 112, 21);
+  background-image: radial-gradient(rgb(255, 185, 118), rgb(255, 166, 94), rgb(255, 147, 71), rgb(255, 128, 47), rgb(223, 112, 21), rgb(198, 98, 19));
   margin: 20px;
   border-radius: 20px;
+  border: 3px solid rgb(255, 185, 118);
   margin-left: 30px;
   padding: 10px;
 }
 
-/*que es html*//*# sourceMappingURL=estilos.css.map */
+/*que es html*/
+/*contacto html*/
+.item {
+  background-color: rgb(223, 112, 21) !important;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tittle {
+  background-color: rgb(223, 112, 21) !important;
+  color: rgb(233, 236, 233) !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.imgcontacto {
+  background-image: url(img/coffee-5447420_1280.jpg);
+  height: 130px;
+  width: 600px;
+}
+
+/*contacto html*//*# sourceMappingURL=estilos.css.map */
