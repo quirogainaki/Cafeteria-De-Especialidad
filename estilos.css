@@ -183,8 +183,7 @@ button {
 
 .columnas1 {
   background-image: repeating-linear-gradient(145deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
   border-top-left-radius: 30px !important;
@@ -194,8 +193,7 @@ button {
 .columnas2 {
   border-top-right-radius: 30px !important;
   background-image: repeating-linear-gradient(45deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
   color: rgb(233, 236, 233);
@@ -203,66 +201,41 @@ button {
 
 .columnas3 {
   background-image: repeating-linear-gradient(145deg, #502005 20%, #7D4B1A 35%, #7D5B3A 35%);
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
   border: 7px double rgb(233, 236, 233);
   border-style: double;
   border-top-left-radius: 30px !important;
   color: rgb(233, 236, 233);
 }
 
-.columnas1:hover {
-  scale: 1.2;
-}
-
-.columnas2:hover {
-  scale: 1.2;
-}
-
-.columnas3:hover {
-  scale: 1.2;
-}
-
-.cuadrado1:hover {
-  scale: 0.9;
-}
-
-.cuadrado2:hover {
-  scale: 0.9;
-}
-
-.cuadrado3:hover {
-  scale: 0.9;
-}
-
 .cuadrado1 {
+  transition: 1s;
   background-image: url(img/index1.jpg);
   background-size: contain;
   -o-object-fit: contain;
      object-fit: contain;
   background-position: center right;
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
 }
 
 .cuadrado2 {
+  transition: 1s;
   background-image: url(img/index2.jpg);
   background-size: contain;
   -o-object-fit: contain;
      object-fit: contain;
   background-position: center right;
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
 }
 
 .cuadrado3 {
+  transition: 1s;
   background-image: url(img/index3.jpg);
   background-size: contain;
   -o-object-fit: contain;
      object-fit: contain;
   background-position: center right;
-  margin-top: 20px;
-  transition: 1s;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -525,6 +498,46 @@ footer {
   border: 3px solid rgb(255, 185, 118);
   margin-left: 30px;
   padding: 10px;
+}
+
+/*.animacion1{
+    animation-name: translate1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}*/
+@keyframes translate1 {
+  0% {
+    transform: translateX(-200px);
+  }
+}
+.animacion1 {
+  animation: translate1 1s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animacion2 {
+  animation: translate1 2s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animacion3 {
+  animation: translate1 3s ease-in-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.animacion4 {
+  animation: translate1 4s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animacion5 {
+  animation: translate1 5s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 /*que es html*/

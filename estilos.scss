@@ -163,16 +163,14 @@ button{
         @if $i==2{
             border-top-right-radius: 30px !important;
             background-image: repeating-linear-gradient(45deg  , #502005 20%, #7D4B1A 35%, #7D5B3A 35%,);
-            margin-top: 20px;
-            transition: 1s;
+            margin-top: 15px;
             border: 7px double rgb(233, 236, 233);
             border-style: double;
             color: $lettercolor;
         }
         @else {
             background-image: repeating-linear-gradient(145deg  , #502005 20%, #7D4B1A 35%, #7D5B3A 35%,);
-            margin-top: 20px;
-            transition: 1s;
+            margin-top: 15px;
             border: 7px double rgb(233, 236, 233);
             border-style: double;
             border-top-left-radius: 30px !important;
@@ -181,24 +179,14 @@ button{
         
     }
 }
-@for $i from 1 through 3 {
-    .columnas#{$i}:hover{
-        scale: 1.2;
-    }
-}
-@for $i from 1 through 3{
-    .cuadrado#{$i}:hover{
-        scale: 0.9;
-    }
-}
 @for $i from 1 through 3{
     .cuadrado#{$i}{
+        transition: 1s; 
         background-image: url(img/index#{$i}.jpg);
         background-size: contain;
         object-fit: $bgi;
         background-position: center right;
-        margin-top: 20px;
-        transition: 1s;
+        margin-top: 15px;
     }
 }
 @media only screen and (max-width: 576px){
@@ -360,6 +348,25 @@ footer{
     margin-left: 30px;
     padding: 10px;
 }
+/*.animacion1{
+    animation-name: translate1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}*/
+
+@keyframes  translate1{
+    0%{
+        transform: translateX(-200px);
+    }
+}
+@for $i from 1 through 5{
+    .animacion#{$i}{
+        animation: translate1 $i * 1s ease-in-out;
+        animation-delay: $i * 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
 /*que es html*/
 /*contacto html*/
 .item{
