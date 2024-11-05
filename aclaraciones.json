@@ -1,0 +1,6 @@
+Aplicamos sass, con uso de variables y nexting en nuestro codigo.
+se agrego la propiedad: background-size en las imagenes, se me salio de la cabeza esa propiedad :/.
+Se mejoraron las aplicaciones de sass utilizando condicionales y bucles.
+Se integraron degradados en bastantes backgrounds, como la imagen de fondo de todos los archivos, el fondo de titulos y texto de descripciones
+Con la libreria de aos se aplicaron animaciones en la mayoria de los elementos html, y en el archivo de contacto se mezclaron propiedades en los elementos como translate, transform, transicion desde sass con un bucle en diferentes tiempos.
+Y por ultimo se aplicaron los tips para el seo, con resizepixel comprimi todas las imagenes, las que pude recorte y pixele, se agregaron descripciones breves en los alts de las imagenes, se creo una descripcion distinta para cada archivo html con algunas keywords bases y otras personalizadas por cada archivo.
