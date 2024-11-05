@@ -1,0 +1,29 @@
+[33mcommit 49d73117d285b69c1fb5605fd7c571f2f5f5c4bf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Iñaki Quiroga <iquirogaberrondo@gmail.com>
+Date:   Mon Oct 28 20:31:07 2024 -0300
+
+    se integraron animaciones en todas las secciones
+
+[33mcommit 3a4a954216e95efdf61c68f169dbfd76e72270de[m
+Author: Iñaki Quiroga <iquirogaberrondo@gmail.com>
+Date:   Mon Oct 21 11:29:08 2024 -0300
+
+    se integraron degradados en todas las secciones
+
+[33mcommit e5a13f010b8604bcaea33d99675f3ca57a4769e6[m
+Author: Iñaki Quiroga <iquirogaberrondo@gmail.com>
+Date:   Tue Oct 8 17:27:26 2024 -0300
+
+    Continuamos aplicando sass, utilizando condicionales y bucles
+
+[33mcommit 4b643c08991e98cd438d489237362aad70aba058[m
+Author: Iñaki Quiroga <iquirogaberrondo@gmail.com>
+Date:   Tue Oct 1 00:12:44 2024 -0300
+
+    aplicamos background-sizes a las imagenes
+
+[33mcommit f85a91de9917f8178b97a43e1f56a21885a10f98[m
+Author: Iñaki Quiroga <iquirogaberrondo@gmail.com>
+Date:   Mon Sep 30 21:50:44 2024 -0300
+
+    aplicamos sass creando variables y el uso de nextin
